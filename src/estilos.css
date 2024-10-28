@@ -5,4 +5,1117 @@
 @tailwind utilities;
 
 
+.nota_contenido a{
+    @apply text-cthird underline;
+    }
     
+    .nota_contenido .cita{
+    @apply px-10 font-bold text-lg bg-gray-100 py-6 my-4;
+    }
+
+    .nota_contenido .cita span{
+    @apply block text-csecondary italic normal-case pt-2 text-sm;
+    }
+
+    .lateral_videos .form-control, .buscar_dark input{
+    @apply p-2 border-2 border-csecondary w-full bg-black;
+    }
+
+    .form-control{
+    @apply py-2 px-4 text-gray-600 text-sm border border-gray-600 rounded w-full bg-white;
+    }
+
+    .btn_primary{
+    @apply px-20 font-semibold py-2 rounded text-cprimary border-2 border-cprimary  hover:text-white hover:bg-cprimary;
+    }
+
+   
+
+    .btn_secondary{
+     @apply px-10 rounded w-full font-semibold py-2 text-white bg-cprimary border-2 border-cprimary hover:border-cthird hover:text-cthird;
+    }
+
+    .btn_secondary.w-auto, .btn_primary.w-auto{
+      width: auto !important;
+      padding-left: 3rem !important;
+      padding-right: 3rem !important;
+    }
+
+    .btn_third{
+        @apply px-4 font-semibold py-2 text-csecondary border-2 border-csecondary hover:border-cthird hover:text-cthird;
+       }
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+  }
+
+
+
+.menu_inf a{
+    width:auto;
+    text-align: center;
+}
+
+.menu_inf a.active{
+    @apply font-bold text-cthird;
+}
+.menu_superior a{
+    display: inline-block;
+}
+
+.logo_img{
+    border-radius:0 0 10px 10px;
+    margin-top: -75px;
+    z-index: 9;
+}
+
+.logo_cel img {
+    width: 120px;
+    margin-top: 40px;
+    left: 15px;
+}
+.img_encima_footer{
+    left: 50%;
+    right: 50%;
+    margin-top: -60px;
+}
+
+
+.encima {
+  position: absolute;
+  margin-top: -12px;
+  margin-left: -33px;
+  background: #fff;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Switch */
+
+.toggle-switch {
+  display: none
+}
+
+.toggle-switch+label {
+  display: inline-block;
+  position: relative;
+  height: 16px;
+  max-height: 1em;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding-left: 40px;
+  line-height: 16px
+}
+
+.toggle-switch+label:empty {
+  padding-left: 30px
+}
+
+.toggle-switch+label:before {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  content: '';
+  border-style: solid;
+  width: 30px;
+  height: 16px;
+  border-width: 0;
+  border-color: transparent;
+  background-color: #afafaf;
+  box-shadow: 0;
+  border-radius: 8px;
+  transition: all .3s
+}
+
+.toggle-switch+label:after {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  left: 1px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 fade(#333, 25%);
+  border-radius: 16px;
+  transition: left .3s, right .3s
+}
+
+.toggle-switch:checked+label:before {
+  background-color: #8bc34a;
+  transition: all .3s
+}
+
+.toggle-switch:checked+label:after {
+  left: 15px;
+  transition: left .3s, right .3s
+}
+
+.toggle-switch:disabled+label {
+  cursor: no-drop
+}
+
+.toggle-switch:disabled+label:before {
+  opacity: .3
+}
+
+.preload .toggle-switch+*,
+.preload .toggle-switch+*:before,
+.preload .toggle-switch+*:after {
+  transition: 0 !important
+}
+
+.container{
+  overflow-x: hidden;
+}
+
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.z-20 {
+  z-index: 20;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-full {
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-700 {
+  transition-duration: 700ms;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+#default-carousel{
+   width: 90%;
+   margin: 0 5%;
+}
+
+
+.fila-scroll {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-right: 10px !important;
+  scrollbar-width: none;
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.fila-scroll.fila-flecha{
+  
+  overflow: visible;
+  overflow-x: scroll !important;
+}
+
+.fila_eventos_gratuitos{
+  background: url(../src/assets/images/fondo_gratuitos.jpg) repeat-x;
+}
+
+.fondo_negro{
+  background: url(../src/assets/images/fondo_negro.jpg) no-repeat;
+  background-size: cover;
+}
+.prohibido {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.prohibido::before {
+  content: '\2215';
+  color: #111;
+  font-size: 1rem;
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 999;
+  margin-top: -2px;
+  width: 100%;
+  font-weight: 900;
+}
+
+.cuadro{
+  height: 54px;
+  vertical-align: middle;
+  background: rgba(255,255,255,0.8);
+}
+
+.cuadro.img{
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.fila_eventos{
+  height: 350px;;
+}
+
+.foto_evento_cuadro{
+   overflow: hidden;
+}
+
+.foto_evento_cuadro img{
+    min-width: 100%;
+    height: 100%;
+    max-width: max-content;
+    max-height: 175px;
+}
+
+.tarjeta_horario{
+  position: relative;
+  margin: 0 2%;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+  max-width: 40%;
+  width: 100%;
+  -webkit-box-direction: normal;
+}
+
+.tarjeta_nota{
+  position: relative;
+  margin: 0 2%;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+  max-width: 35%;
+  width: 100%;
+  -webkit-box-direction: normal;
+  align-items: baseline;
+  justify-content: center;
+  display: flex; 
+}
+
+.tarjeta_nota_gratuita{
+  position: relative;
+  margin: 0 2%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%;
+  width: 100%;
+  -webkit-box-direction: normal;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.corte_img_nota{
+  max-height: 300px;
+  width: 91%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 3%;
+}
+
+.corte_img_nota_gratuito {
+  max-height: 130px;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.tarjeta_nota_encima{
+  margin: 0 4.5%;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  max-width: 80%;
+  bottom:1%;
+  z-index: 1;
+}
+
+
+.tarjeta_nota_encima.total {
+  margin: 0 25%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  top: 250px;
+  z-index: 999;
+  width: 50%;
+  bottom: auto;
+}
+
+.tarjeta_plataforma{
+  position: relative;
+  margin: 0 2%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  width: 100%;
+  -webkit-box-direction: normal;
+}
+
+.tarjeta_categoria, .tarjeta_fecha{
+  position: relative;
+  margin: 0 1.5%;
+  -webkit-box-direction: normal;
+  flex: 0 0 auto;
+}
+
+
+.tarjeta_horario:first-of-type,
+.tarjeta_plataforma:first-of-type,
+.tarjeta_categoria:first-of-type,
+.tarjeta_fecha:first-of-type,
+.tarjeta_nota:first-of-type{
+  margin: 0 1% 0 0;
+}
+
+.tarjeta_nota_gratuita:first-of-type{
+  margin: 0 3% 0 6%;
+}
+
+.tarjeta_fecha.is-activated::after {
+  width: 0;
+  height: 0;
+  border-left: 30px solid #000;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  content: '';
+  display: block;
+  transform: rotate(90deg);
+  position: absolute;
+  z-index: 999;
+}
+
+.tarjeta_check{
+  height: 200px;
+  padding: 70px 0 !important;
+}
+
+
+/* Checkmark */
+/* Hide the browser's default checkbox */
+.container_input {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1000;
+}
+
+.container_input input[type="radio"],
+.container_input input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  min-height: 100px;
+  width: 110%;
+  right: -14px;
+  z-index: 10;
+  margin: 0 !important;
+  top: -19px;
+}
+
+.container_input input[type="radio"i],
+.container_input input[type="checkbox"i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 3px 4px;
+  padding: initial;
+  border: initial;
+}
+
+
+
+
+.green_t{
+  color: #52b788
+}
+
+.red_t{
+  color: var(--brand2);
+}
+
+
+
+.manteletah div div div div.container_input{
+  margin:0 !important;
+}
+
+
+#Slide4 #id-checkgroup-oferta-e35 .container_input input[type="checkbox"]{
+  min-height: 120px;
+}
+
+.container_input .checkmark {
+  position: absolute;
+  top: -14px;
+  right: 12px;
+  height: 28px;
+  width: 28px;
+  left: auto;
+  background-color: transparent;
+  border-radius: 100%;
+}
+
+
+/* On mouse-over, add a grey background color */
+.container_input:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container_input input:checked ~ .checkmark {
+    border: 2px solid #fff !important;
+}
+
+.container_input input:checked .checkmark {
+  background-color: #000 !important;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.container_input .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container_input input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container_input .checkmark:after {
+  right: 9px;
+  top: 5px;
+  width: 6px;
+  height: 10px;
+  border: solid #f1f1f1;
+  border-width: 0px 2px 2px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.container_input.categoria .checkmark:after,
+.container_input.subcategoria .checkmark:after{
+  width: 0;
+  height: 0;
+  border:0;
+}
+
+.container_input.categoria input:checked ~ .checkmark,
+.container_input.subcategoria input:checked ~ .checkmark {
+  border: 0 !important;
+}
+
+.container_input:hover.categoria input ~ .checkmark,
+.container_input:hover.subcategoria input ~ .checkmark {
+  background-color: transparent;
+}
+
+.opc {
+  opacity: 0.9
+}
+
+.opacity_100 {
+  opacity: 1 !important
+}
+
+.is-activated{
+  background: #000;
+  color: #fff;
+  border:1px solid #000;
+}
+
+
+.is-activated2{
+  background: #ed1a3b;
+  border:1px solid #ed1a3b;
+  color: #fff;
+}
+
+
+
+
+
+
+
+/* NOTA */
+.img_ppal_nota{
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.img_ppal_nota:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 400px;
+}
+
+.info_nota{
+    z-index: 5;
+}
+
+.nota_contenido p{
+  margin: 15px 0;
+  line-height: 1.8rem;
+}
+
+.dos_lineas, .tres_lineas, .cuatro_lineas, .cinco_lineas, .seis_lineas, .veintitres_lineas, .una_linea{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+}
+
+.una_linea {
+    -webkit-line-clamp: 1;
+}
+
+.tres_lineas {
+    -webkit-line-clamp: 3;
+}
+
+.cuatro_lineas {
+    -webkit-line-clamp: 4;
+}
+.cinco_lineas {
+    -webkit-line-clamp: 5;
+}
+
+.seis_lineas {
+    -webkit-line-clamp: 6;
+}
+
+.menu_lateral_secciones ul ul {
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+}
+
+
+.menu_lateral_secciones ul li ul li::before{
+    content: '\2219';
+    display: inline-block;
+    margin-right: 10px;
+    @apply text-csecondary;
+}
+
+.menu_lateral_secciones ul li a{
+    display: inline-block;
+}
+
+.menu_lateral_secciones ul li a:hover{
+    @apply text-cthird;
+}
+
+
+/* Icons */
+.icon.visa, .icon.ocesa, .icon.super, .icon.otro{
+  width:150px;
+  height:30px;
+  margin:10px auto;
+}
+
+.icon.mastercard{
+  width:150px;
+  height:50px;
+}
+
+.icon.amex, .icon.ticketmaster{
+  width:150px;
+  height:50px;
+}
+
+.visa{
+  background:url(../src/assets/images/visa.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+  transition:all linear 0.3s;
+}
+
+.is-activated .visa{
+  background:url(../src/assets/images/visab.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+}
+
+.mastercard{
+  background:url(../src/assets/images/mastercard.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+  transition:all linear 0.3s;
+}
+
+.is-activated .mastercard{
+  background:url(../src/assets/images/mastercardb.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+}
+
+.amex{
+  background:url(../src/assets/images/amex.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+  transition:all linear 0.3s;
+}
+
+.is-activated .amex{
+  background:url(../src/assets/images/amexb.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+}
+
+.ticketmaster{
+  background:url(../src/assets/images/ticketmaster.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+  transition:all linear 0.3s;
+}
+
+.is-activated .ticketmaster{
+  background:url(../src/assets/images/ticketmasterb.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+}
+
+.ocesa{
+  background:url(../src/assets/images/ocesa.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+  transition:all linear 0.3s;
+}
+
+.is-activated .ocesa{
+  background:url(../src/assets/images/ocesab.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+}
+
+.super{
+  background:url(../src/assets/images/super.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+  transition:all linear 0.3s;
+}
+
+.is-activated .super{
+  background:url(../src/assets/images/superb.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+}
+
+.otro{
+  background:url(../src/assets/images/otro.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+  transition:all linear 0.3s;
+}
+
+.is-activated .otro{
+  background:url(../src/assets/images/otrob.svg) center no-repeat;
+  display: block;
+  background-size: contain;
+}
+
+
+/********  Upload files  **********/
+
+.file-upload {
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+  
+  .file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: var(--color1);
+    border: 1px solid #e5e7eb;
+    padding: 7px 10px;
+    border-radius: 4px;
+    transition: all .2s ease;
+    outline: none;
+    display:none;
+  }
+  
+  .file-upload-btn:hover {
+    background: #var(--color1);
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+  
+  .file-upload-content {
+    display: none;
+    text-align: center;
+  }
+  
+  .file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .image-upload-wrap {
+   
+    border: 1px dashed #9CA4AF;
+    position: relative;
+    border-radius: 4px;
+  }
+  
+  .image-dropping,
+    .image-upload-wrap:hover {
+      border: 1px dashed #9CA4AF;
+  }
+  
+  .image-upload-wrap:hover {
+    background-color: #f4f5f6;
+    border: 1px dashed #000;
+  }
+  
+  .image-upload-wrap:hover h3 {
+    color: var(--color1);
+  }
+  
+  .image-title-wrap {
+    color: #222;
+    text-align: left;
+  }
+  
+  .drag-text {
+    text-align: center;
+  }
+  
+  .drag-text h3 {
+   
+    color:#AFAFAF;
+    padding: 60px 0;
+    background:#f1f1f1;
+  }
+  
+  .file-upload-image {
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .remove-image {
+    margin: 0;
+    color: #EF4444;
+    border: none;
+    transition: all .2s ease;
+    outline: none;
+    font-size: 12px;
+  }
+  
+  .remove-image:hover {
+    color: #cd4535;
+    transition: all .2s ease;
+    cursor: pointer;
+  }
+  
+  .remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+  }
+  
+
+   
+  /***** MEDIA QUERIES *****/
+  
+  @media (max-width: 900px) {
+    
+    .img_ppal_nota:after {
+        height: 340px;
+    }
+
+    .img_ppal_nota {
+        max-height: 340px;
+        overflow: hidden;
+    }
+
+    .sliderAx div{
+        min-height: 400px;
+        max-height: 400px;
+        height: 400px;
+    }
+    
+    .sliderAx div.text{
+        min-height: 340px;
+        max-height: 340px;
+        height: 340px;
+    }
+
+    
+    .bg-cover:before{
+        height: 400px;
+    }
+
+    .tarjeta_check{
+      height: 150px;
+      padding: 50px 0 !important;
+    }
+
+    .tarjeta_plataforma .container_input .checkmark, .tarjeta_check .container_input .checkmark{
+      opacity: 0;
+    }
+  
+  }
+  
+  @media (max-width: 600px) {
+   
+    .tarjeta_horario {
+      position: relative;
+      margin: 0 2%;
+      flex: 0 0 83%;
+      max-width: 83%;
+      width: 100%;
+    }
+
+    .tarjeta_check{
+      height: 100px;
+      padding: 32px 0 !important;
+    }
+
+    
+
+    .tarjeta_nota_encima.total {
+      margin: 0 15%;
+      flex: 0 0 70%;
+      max-width: 70%;
+      top: 225px;
+      width: 70%;
+      bottom: auto;
+    }
+
+    .fila-scroll-cel {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+      flex-flow: row;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      padding-right: 10px !important;
+      scrollbar-width: none;
+      display: flex;
+      position: relative;
+      width: 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .cuadro {
+      background: rgba(255,255,255,0.95);
+      height: auto;
+      text-align: center;
+      width: inherit;
+    }
+
+    .fila_eventos {
+      height:260px;
+    }
+
+    .foto_evento_cuadro img {
+      max-height: 155px;
+    }
+
+    .corte_img_nota {
+      max-height: 212px;
+    }
+
+    .tarjeta_nota {
+      position: relative;
+      margin: 0 1.5%;
+      flex: 0 0 92%;
+      max-width: 92%;
+      height: 240px;
+    }
+
+    .tarjeta_nota_encima {
+      margin: 0 2%;
+      flex: 0 0 83%;
+      max-width: 83%;
+      bottom: 1%;
+      z-index: 1;
+    }
+
+    .icon.visa, .icon.ocesa, .icon.super, .icon.otro{
+      width:100px;
+      height:20px;
+      margin:5px auto;
+    }
+    
+    .icon.mastercard{
+      width:100px;
+      height:30px;
+    }
+    
+    .icon.amex, .icon.ticketmaster{
+      width:100px;
+      height:30px;
+    }
+
+    .tarjeta_plataforma{
+      position: relative;
+      margin: 0 2%;
+      -ms-flex: 0 0 33%;
+      flex: 0 0 33%;
+      max-width: 33%;
+      width: 100%;
+      -webkit-box-direction: normal;
+    }
+
+    .container_input .checkmark {
+      position: absolute;
+      top: -12px;
+      right: 3px;
+      height: 20px;
+      width: 20px;
+      left: auto;
+      background-color: transparent;
+      border-radius: 100%;
+      opacity: 0.7;
+    }
+
+    .container_input .checkmark:after {
+      right: 6px;
+      top: 3px;
+      width: 4px;
+      height: 8px;
+      border: solid #f1f1f1;
+      border-width: 0px 1.5px 1.5px 0;
+      transform: rotate(45deg);
+  }
+
+  .container_input input:checked ~ .checkmark {
+    border: 1.5px solid #fff !important;
+}
+
+    .img_ppal_nota:after {
+        height: 190px;
+    }
+
+    .img_ppal_nota {
+        max-height: 190px;
+        overflow: hidden;
+    }
+
+    .menu_lateral_secciones ul li ul{
+        display: none;
+    }
+    
+    .menu_lateral_secciones ul li ul li::before{
+      display: none;
+    }
+
+    .img_ppal_seccion{
+        max-height: 190px;
+        overflow: hidden;
+    }
+    
+    .img_ppal_seccion:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        background: rgba(0,0,0,0.4);
+        width: 100%;
+        height: 190px;
+    }
+
+    .img_ppal_seccion h2{
+        margin-top: 4rem;
+    }
+
+    .img_ppal_nota {
+        max-height: 300px;
+        overflow: hidden;
+    }
+
+    .sliderAx div{
+        min-height: 300px;
+        max-height: 300px;
+        height: 300px;
+    }
+    
+    .sliderAx div.text{
+        min-height: 240px;
+        max-height: 240px;
+        height: 240px;
+    }
+
+    
+    .bg-cover:before{
+        height: 300px;
+    }
+    
+  }
