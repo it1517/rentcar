@@ -25,24 +25,27 @@
     @apply py-2 px-4 text-gray-600 text-sm border border-gray-600 rounded w-full bg-white;
     }
 
-    .btn_primary{
-    @apply px-20 font-semibold py-2 rounded text-cprimary border-2 border-cprimary  hover:text-white hover:bg-cprimary;
-    }
+   
 
    
 
-    .btn_secondary{
-     @apply px-10 rounded w-full font-semibold py-2 text-white bg-cprimary border-2 border-cprimary hover:border-cthird hover:text-cthird;
+    .btn_primary{
+     @apply px-10 rounded w-full font-semibold py-2 text-black bg-cprimary border-2 border-cprimary hover:border-black hover:text-cthird;
     }
 
-    .btn_secondary.w-auto, .btn_primary.w-auto{
+
+    .btn_primary.w-auto, .btn_secondary.w-auto{
       width: auto !important;
       padding-left: 3rem !important;
       padding-right: 3rem !important;
     }
 
+    .btn_secondary{
+        @apply px-20 font-semibold py-2 rounded text-cprimary border-2 border-cprimary  hover:text-white hover:bg-cprimary;
+        }
+
     .btn_third{
-        @apply px-4 font-semibold py-2 text-csecondary border-2 border-csecondary hover:border-cthird hover:text-cthird;
+        @apply px-4 font-semibold py-2 rounded text-csecondary border-2 border-csecondary hover:border-cthird hover:text-cthird;
        }
 
 
@@ -56,7 +59,26 @@ body{
     font-size: 1rem;
   }
 
+.bg_fondo{
+    background:  url(../src/assets/images/rentcarCarrosFondo.jpg) repeat-x;
+    background-size: contain;
+}
 
+footer{
+    background:  url(../src/assets/images/rentcarfooter.jpg) repeat-x;
+    background-size: cover;
+}
+
+.form_home input{
+    border-bottom: 1px solid #fff;
+    background: #000;
+    padding: 7px 10px;
+}
+
+.form_home input:placeholder-shown{
+    color: #fff;
+    font-size: 14px;
+}
 
 .menu_inf a{
     width:auto;
@@ -329,10 +351,10 @@ body{
 
 .tarjeta_nota{
   position: relative;
-  margin: 0 2%;
-  -ms-flex: 0 0 35%;
-  flex: 0 0 35%;
-  max-width: 35%;
+  margin: 0%;
+  -ms-flex: 0 0 23%;
+  flex: 0 0 23%;
+  max-width: 23%;
   width: 100%;
   -webkit-box-direction: normal;
   align-items: baseline;
@@ -342,7 +364,7 @@ body{
 
 .tarjeta_nota_gratuita{
   position: relative;
-  margin: 0 2%;
+  margin: 0%;
   -ms-flex: 0 0 30%;
   flex: 0 0 30%;
   max-width: 30%;
@@ -353,7 +375,7 @@ body{
 }
 
 .corte_img_nota{
-  max-height: 300px;
+  max-height: 400px;
   width: 91%;
   overflow: hidden;
   align-items: center;
@@ -372,14 +394,18 @@ body{
 }
 
 .tarjeta_nota_encima{
-  margin: 0 4.5%;
-  -ms-flex: 0 0 80%;
-  flex: 0 0 80%;
-  max-width: 80%;
+  margin: 0 1.5%;
+  -ms-flex: 0 0 97%;
+  flex: 0 0 97%;
+  max-width: 97%;
   bottom:1%;
   z-index: 1;
+  left:30px
 }
 
+.collage{
+    top:-76px
+}
 
 .tarjeta_nota_encima.total {
   margin: 0 25%;
@@ -389,6 +415,12 @@ body{
   z-index: 999;
   width: 50%;
   bottom: auto;
+}
+
+.num_encima{
+    line-height: 6.3rem;
+    position: absolute;
+    left: -42px;
 }
 
 .tarjeta_plataforma{
@@ -479,15 +511,6 @@ body{
 }
 
 
-
-
-.green_t{
-  color: #52b788
-}
-
-.red_t{
-  color: var(--brand2);
-}
 
 
 
@@ -668,113 +691,6 @@ body{
 }
 
 
-/* Icons */
-.icon.visa, .icon.ocesa, .icon.super, .icon.otro{
-  width:150px;
-  height:30px;
-  margin:10px auto;
-}
-
-.icon.mastercard{
-  width:150px;
-  height:50px;
-}
-
-.icon.amex, .icon.ticketmaster{
-  width:150px;
-  height:50px;
-}
-
-.visa{
-  background:url(../src/assets/images/visa.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-  transition:all linear 0.3s;
-}
-
-.is-activated .visa{
-  background:url(../src/assets/images/visab.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-}
-
-.mastercard{
-  background:url(../src/assets/images/mastercard.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-  transition:all linear 0.3s;
-}
-
-.is-activated .mastercard{
-  background:url(../src/assets/images/mastercardb.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-}
-
-.amex{
-  background:url(../src/assets/images/amex.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-  transition:all linear 0.3s;
-}
-
-.is-activated .amex{
-  background:url(../src/assets/images/amexb.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-}
-
-.ticketmaster{
-  background:url(../src/assets/images/ticketmaster.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-  transition:all linear 0.3s;
-}
-
-.is-activated .ticketmaster{
-  background:url(../src/assets/images/ticketmasterb.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-}
-
-.ocesa{
-  background:url(../src/assets/images/ocesa.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-  transition:all linear 0.3s;
-}
-
-.is-activated .ocesa{
-  background:url(../src/assets/images/ocesab.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-}
-
-.super{
-  background:url(../src/assets/images/super.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-  transition:all linear 0.3s;
-}
-
-.is-activated .super{
-  background:url(../src/assets/images/superb.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-}
-
-.otro{
-  background:url(../src/assets/images/otro.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-  transition:all linear 0.3s;
-}
-
-.is-activated .otro{
-  background:url(../src/assets/images/otrob.svg) center no-repeat;
-  display: block;
-  background-size: contain;
-}
 
 
 /********  Upload files  **********/
@@ -892,6 +808,16 @@ body{
 
    
   /***** MEDIA QUERIES *****/
+
+  @media (max-width: 1238px) {
+    .bg_fondo {
+        background-size: cover;
+    }
+
+    .carros_encima{
+        margin-bottom: -50px;
+    }
+  }
   
   @media (max-width: 900px) {
     
@@ -990,39 +916,32 @@ body{
     }
 
     .corte_img_nota {
-      max-height: 212px;
+      max-height: 300px;
     }
 
     .tarjeta_nota {
       position: relative;
       margin: 0 1.5%;
-      flex: 0 0 92%;
-      max-width: 92%;
-      height: 240px;
+      flex: 0 0 45%;
+      max-width: 45%;
+      height: 300px;
     }
 
     .tarjeta_nota_encima {
       margin: 0 2%;
       flex: 0 0 83%;
       max-width: 83%;
-      bottom: 1%;
+      bottom: 18%;
       z-index: 1;
+      left:20px
     }
 
-    .icon.visa, .icon.ocesa, .icon.super, .icon.otro{
-      width:100px;
-      height:20px;
-      margin:5px auto;
-    }
     
-    .icon.mastercard{
-      width:100px;
-      height:30px;
-    }
-    
-    .icon.amex, .icon.ticketmaster{
-      width:100px;
-      height:30px;
+
+    .num_encima{
+        line-height: 5.5rem;
+        position: absolute;
+        left: -38px;
     }
 
     .tarjeta_plataforma{
