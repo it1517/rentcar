@@ -711,6 +711,10 @@ video {
   width: 80%;
 }
 
+.w-5\/12 {
+  width: 41.666667%;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -1334,6 +1338,11 @@ footer{
 
 .menu_superior a{
   display: inline-block;
+}
+
+.p_c_e{
+  right: 30px;
+  margin-top: -170px;
 }
 
 .logo_img{
@@ -2037,6 +2046,11 @@ footer{
 }
 
 @media (max-width: 900px) {
+  .p_c_e{
+    right: 30px;
+    margin-top: -140px;
+  }
+
   .img_ppal_nota:after {
     height: 340px;
   }
@@ -2084,6 +2098,11 @@ footer{
   .tarjeta_check{
     height: 100px;
     padding: 32px 0 !important;
+  }
+
+  .p_c_e{
+    right: 30px;
+    margin-top: -90px;
   }
 
   .tarjeta_nota_encima.total {
@@ -2325,6 +2344,10 @@ footer{
 
   .md\:w-28 {
     width: 7rem;
+  }
+
+  .md\:w-4\/12 {
+    width: 33.333333%;
   }
 
   .md\:w-8\/12 {

@@ -92,6 +92,11 @@ footer{
     display: inline-block;
 }
 
+.p_c_e{
+    right: 30px;
+    margin-top: -170px;
+}
+
 .logo_img{
     border-radius:0 0 10px 10px;
     margin-top: -75px;
@@ -821,6 +826,11 @@ footer{
   
   @media (max-width: 900px) {
     
+    .p_c_e{
+        right: 30px;
+        margin-top: -140px;
+    }
+
     .img_ppal_nota:after {
         height: 340px;
     }
@@ -873,7 +883,10 @@ footer{
       padding: 32px 0 !important;
     }
 
-    
+    .p_c_e{
+        right: 30px;
+        margin-top: -90px;
+    }
 
     .tarjeta_nota_encima.total {
       margin: 0 15%;
