@@ -256,6 +256,10 @@ footer{
   left: 50%;
 }
 
+.leading-1{
+    line-height: 0.5rem;
+}
+
 .top-1\/2 {
   top: 50%;
 }
@@ -264,6 +268,16 @@ footer{
    width: 90%;
    margin: 0 5%;
 }
+
+.fixed-element {
+    position: relative;
+  }
+  
+  .fixed {
+    position: fixed;
+    top: 0;
+    z-index: 9;
+  }
 
 
 .fila-scroll {
@@ -826,6 +840,14 @@ footer{
   
   @media (max-width: 900px) {
     
+    .collage{
+        top: 76px;
+    }
+
+    .fila_eventos {
+        height: 275px;
+    }
+
     .p_c_e{
         right: 30px;
         margin-top: -140px;

@@ -592,6 +592,10 @@ video {
   visibility: visible;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -642,6 +646,11 @@ video {
   margin-right: 2.5rem;
 }
 
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -662,8 +671,20 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-16 {
+  margin-left: 4rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .mt-0 {
   margin-top: 0px;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .block {
@@ -705,6 +726,10 @@ video {
 
 .w-32 {
   width: 8rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .w-4\/5 {
@@ -1505,6 +1530,10 @@ footer{
   left: 50%;
 }
 
+.leading-1{
+  line-height: 0.5rem;
+}
+
 .top-1\/2 {
   top: 50%;
 }
@@ -1512,6 +1541,16 @@ footer{
 #default-carousel{
   width: 90%;
   margin: 0 5%;
+}
+
+.fixed-element {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 9;
 }
 
 .fila-scroll {
@@ -2046,6 +2085,14 @@ footer{
 }
 
 @media (max-width: 900px) {
+  .collage{
+    top: 76px;
+  }
+
+  .fila_eventos {
+    height: 275px;
+  }
+
   .p_c_e{
     right: 30px;
     margin-top: -140px;
@@ -2342,6 +2389,10 @@ footer{
     width: 16.666667%;
   }
 
+  .md\:w-24 {
+    width: 6rem;
+  }
+
   .md\:w-28 {
     width: 7rem;
   }
@@ -2386,6 +2437,11 @@ footer{
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .md\:px-24 {
@@ -2451,11 +2507,6 @@ footer{
     text-align: right;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2471,9 +2522,9 @@ footer{
     line-height: 1.5rem;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .md\:text-xs {
@@ -2483,14 +2534,42 @@ footer{
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  .lg\:w-32 {
+    width: 8rem;
+  }
+
   .lg\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
+  .lg\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .lg\:pl-24 {
+    padding-left: 6rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
