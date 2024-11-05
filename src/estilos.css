@@ -40,6 +40,12 @@
       padding-right: 3rem !important;
     }
 
+    .btn_primary.w-auto.ch, .btn_secondary.w-auto.ch{
+        width: auto !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+      }
+
     .btn_secondary{
         @apply px-20 font-semibold py-2 rounded text-cprimary border-2 border-cprimary  hover:text-white hover:bg-cprimary;
         }
@@ -69,13 +75,13 @@ footer{
     background-size: cover;
 }
 
-.form_home input{
+.form_home input, .form_homei{
     border-bottom: 1px solid #fff;
     background: #000;
     padding: 7px 10px;
 }
 
-.form_home input:placeholder-shown{
+.form_home input:placeholder-shown, .form_homei:placeholder-shown{
     color: #fff;
     font-size: 14px;
 }
@@ -114,6 +120,20 @@ footer{
     margin-top: -60px;
 }
 
+.img_ficha_auto{
+    max-height: 215px;
+}
+
+.icon_mas{
+    left:42%;
+    margin-bottom: -4px;
+    cursor: pointer;
+}
+
+.icon_mas_img.abajo{
+    transform: rotate(180deg);
+    margin-top: 20px;
+}
 
 .encima {
   position: absolute;

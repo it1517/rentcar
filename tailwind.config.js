@@ -5,6 +5,7 @@ module.exports = {
     './components/**/*.{html,js}',
     'public/agregar_evento.html',
     'public/index.html',
+    'public/autos_disponibles.html',
     'public/landing.html',
     'src/estilos.css',
   ],
