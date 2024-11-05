@@ -125,11 +125,20 @@
     <!-- CONTENIDO CENTRAL -->
     <main class="p-12 w-full container block mx-auto clear-both">
 
-      <div class="">
-        <h2 class="text-black md:text-4xl text-3xl font-extrabold md:text-left text-center"><span class="text-cprimary font-bold">ELIGE</span> AHORA TU AUTO</h2>
-        <p class="text-dark md:text-left text-center">Hemos encontrado los siguientes modelos disponibles para las fechas seleccionadas:
-        </p>
-       </div>
+      <div class="flex justify-between items-end">
+        <div class="">
+          <h2 class="text-black md:text-4xl text-3xl font-extrabold md:text-left text-center"><span class="text-cprimary font-bold">ELIGE</span> AHORA TU AUTO</h2>
+          <p class="text-dark md:text-left text-center">Hemos encontrado los siguientes modelos disponibles para las fechas seleccionadas:
+          </p>
+         </div>
+  
+         <div>
+          <select class="text-black form_orden w-full text-sm hidden md:flex">
+            <option>Ordenar por</option>
+          </select>
+         </div>
+      </div>
+      
 
        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-x-12 md:gap-y-14 gap-12 md:mt-14 mt-0 lg:px-4 md:px-0 px-0 pt-10 md:pt-0">
 
@@ -783,7 +792,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
           </svg></button></div>
 
-          <div class="flex justify-center"><button type="button" class="btn_third w-auto ch mx-2 ">1</button></div>
+          <div class="flex justify-center"><button type="button" class="btn_third w-auto ch mx-2 active">1</button></div>
 
           <div class="flex justify-center"><button type="button" class="btn_third w-auto ch mx-2 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />

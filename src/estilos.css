@@ -54,7 +54,9 @@
         @apply px-4 font-semibold py-2 rounded text-csecondary border-2 border-csecondary hover:border-cthird hover:text-cthird;
        }
 
-
+       .btn_third.active{
+        @apply px-4 font-semibold py-2 rounded text-white bg-black border-2 border-csecondary hover:border-cthird hover:text-cthird;
+       }
 
 body{
     margin: 0;
@@ -79,6 +81,15 @@ footer{
     border-bottom: 1px solid #fff;
     background: #000;
     padding: 7px 10px;
+}
+
+.form_orden{
+    border: 1px solid #000;
+    background: #fff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    color: #000;
+    min-width: 200px;
 }
 
 .form_home input:placeholder-shown, .form_homei:placeholder-shown{
