@@ -40,6 +40,10 @@
       padding-right: 3rem !important;
     }
 
+    .btn_primary.w-3\/5, .btn_secondary.w-3\/5{
+      width: 60% !important;
+    }
+
     .btn_primary.w-auto.ch, .btn_secondary.w-auto.ch{
         width: auto !important;
         padding-left: 2rem !important;
@@ -92,10 +96,19 @@ footer{
     min-width: 200px;
 }
 
-.form_home input:placeholder-shown, .form_homei:placeholder-shown{
+input:placeholder-shown, input::placeholder{
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form_home input:placeholder-shown, .form_homei:placeholder-shown, .form_home input::placeholder, .form_homei::placeholder{
     color: #fff;
     font-size: 14px;
+    font-weight: 500;
 }
+
+
 
 .menu_inf a{
     width:auto;
@@ -580,7 +593,7 @@ footer{
   height: 28px;
   width: 28px;
   left: auto;
-  background-color: transparent;
+  border: 1px solid #cfd1b4;
   border-radius: 100%;
 }
 
@@ -592,7 +605,7 @@ footer{
 
 /* When the checkbox is checked, add a blue background */
 .container_input input:checked ~ .checkmark {
-    border: 2px solid #fff !important;
+    border: 2px solid #7e894e !important;
 }
 
 .container_input input:checked .checkmark {
@@ -613,10 +626,10 @@ footer{
 
 .container_input .checkmark:after {
   right: 9px;
-  top: 5px;
+  top: 6.5px;
   width: 6px;
   height: 10px;
-  border: solid #f1f1f1;
+  border: solid #7e894e;
   border-width: 0px 2px 2px 0;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
@@ -650,9 +663,7 @@ footer{
 }
 
 .is-activated{
-  background: #000;
-  color: #fff;
-  border:1px solid #000;
+  
 }
 
 

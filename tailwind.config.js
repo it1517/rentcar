@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './pages/**/*.{html,js}',
     './components/**/*.{html,js}',
+    'public/**/*.{html,js}',
     'public/agregar_evento.html',
     'public/index.html',
     'public/autos_disponibles.html',

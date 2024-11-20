@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>RENTCAR</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="img/favicon.ico" />
+
+        <!-- Font Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">                                                                                                                                                                                                                                                 
+        <!-- TAILWIND -->
+        <link  type="text/css" rel="stylesheet" href="final.css">
+
+    </head>
+
+    <body class="w-full lg:bg-white">
+
+    <!-- MENU DE NAVEGACION - HEADER --> 
+    <div class="header bg-black">
+        <!--- NAVEGACION -->
+        <!-- Navbar goes here -->
+		<nav class="">
+			<div class="container pb-4 mx-auto">
+				<div class="flex justify-between pl-6 pr-1">
+					<div class="md:flex  items-center  justify-between w-full menu_inf hidden ">
+						
+						<!-- Menu ppal -->
+            <a href="#" class="text-white lg:text-sm md:text-xs text-xs hover:text-gray-90 dark:hover:text-gray-50 border-transparent mx-1.5 sm:mx-6">Blog</a>
+            <a href="#" class="text-white lg:text-sm md:text-xs text-xs hover:text-gray-90 dark:hover:text-gray-50 border-transparent mx-1.5 sm:mx-6">Renta México</a>
+            <a href="#" class="mx-1.5 sm:mx-6 logo_menu relative"><img src="../src/assets/images/rentcarLogoHeader.png" class="w-60" alt="Logo"></a>
+            <a href="#" class="text-white lg:text-sm md:text-xs text-xs hover:text-gray-90 dark:hover:text-gray-50 border-transparent mx-1.5 sm:mx-6">Contacto</a>
+            <a href="#" class="text-white lg:text-sm md:text-xs text-xs hover:text-gray-90 dark:hover:text-gray-50 border-transparent mx-1.5 sm:mx-6">FAQ</a>
+            <a href="#" class="text-white lg:text-sm md:text-xs text-xs hover:text-gray-90 dark:hover:text-gray-50 border-transparent mx-1.5 sm:mx-6"><img src="../src/assets/images/rentcarSVGWhatsapp.svg" alt="Icon whatsapp" class="w-4"></a>
+          </div>
+				
+          <!-- Mobile logo -->
+          <div class=" w-4/5 md:hidden ">
+            <a href="#" class=""><img src="../src/assets/images/rentcarLogoHeader.png" class="w-32" alt="Logo"></a>
+          </div>
+
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center float-right">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-white hover:text-gray-200 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor">
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="hidden mobile-menu bg-black ml-16 rounded-tl-lg rounded-bl-lg fixed-element w-full">
+				<ul class=" pb-2 pt-4">
+					<li class="px-3 py-1">
+            <a href="#" class="text-white lg:text-sm md:text-xs text-sm tracking-widest hover:text-gray-90 dark:hover:text-gray-50 border-transparent mx-1.5 sm:mx-2">Blog</a>
+          </li>
+          <li class="px-3 py-1">
+            <a href="#" class="text-white lg:text-sm md:text-xs text-sm tracking-widest hover:text-gray-90 dark:hover:text-gray-50 border-transparent mx-1.5 sm:mx-2">Renta México</a>
+          </li>
+          <li class="px-3 py-1">
+            <a href="#" class="text-white lg:text-sm md:text-xs text-sm tracking-widest hover:text-gray-90 dark:hover:text-gray-50 border-transparent mx-1.5 sm:mx-2">Contacto</a>
+          </li>
+          <li class="px-3 py-1">
+          <a href="#" class="text-white lg:text-sm md:text-xs text-sm tracking-widest hover:text-gray-90 dark:hover:text-gray-50 border-transparent mx-1.5 sm:mx-2">FAQ</a>
+          </li>
+          <li class="px-3 py-1 block leading-1">
+            <a href="#" class="text-white  tracking-widest hover:text-gray-90 dark:hover:text-gray-50 border-transparent mx-12 sm:mx-2">
+              <img src="../src/assets/images/rentcarSVGWhatsapp.svg" alt="Icon whatsapp" class="w-4 ml-3">
+              </a>
+            </li>
+				</ul>
+			</div>
+
+    </nav>
+
+      
+
+      <!-- INFO DE COMPRA TOTAL -->
+      <div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-0 md:mt-0 mt-0 p-6 md:p-10  pb-10">
+        <div>
+          <p class="font-light uppercase text-white md:py-2 py-1 md:text-base text-xs block text-center md:text-left">JETTA VOLSKWAGEN</p>
+          <p class="font-light uppercase text-white md:py-2 py-1 md:text-base text-xs block text-center md:text-left">TERMINAL 1 CDMX</p>
+          <p class="font-light uppercase text-white md:py-2 py-1 md:text-base text-xs block text-center md:text-left">01/01/2015 - 01/15/2025</p>
+          <img src="../src/assets/images/rentcarCarroFicha1.png" alt="Auto seleccionado" class="md:w-60 w-52 absolute md:mt-5 mt-24 ml-12 md:ml-0"/>
+        </div>
+
+        <div>
+          <!-- Renglón de datos-->
+          <div class="flex justify-between items-end border-b border-cprimary md:py-3 py-1">
+            <div>
+              <p class="font-bold uppercase text-white">RENTA POR 5 DÍAS</p>
+            </div>
+
+            <div>
+              <p class="font-bold uppercase text-white">$1099</p>
+            </div>
+          </div>
+
+           <!-- Renglón de datos-->
+           <div class="flex justify-between items-end border-b border-cprimary md:py-3 py-1">
+            <div>
+              <p class="font-bold uppercase text-white">SEGURO</p>
+            </div>
+
+            <div>
+              <p class="font-bold uppercase text-white">$499</p>
+            </div>
+          </div>
+
+           <!-- Renglón de datos-->
+           <div class="flex justify-between items-end border-b border-cprimary md:py-3 py-1">
+            <div>
+              <p class="font-bold uppercase text-white">IMPUESTOS</p>
+            </div>
+
+            <div>
+              <p class="font-bold uppercase text-white">$199</p>
+            </div>
+          </div>
+
+          <!-- Renglón de datos-->
+          <div class="flex justify-between items-end md:pt-3 pt-1">
+            <div>
+              <p class="font-extrabold text-xl uppercase text-white">TOTAL</p>
+            </div>
+
+            <div>
+              <p class="font-extrabold text-xl uppercase text-white">$1899</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- CONTENIDO CENTRAL -->
+    <main class="md:p-12 p-8 w-full container block mx-auto clear-both">
+
+      <div class="flex  items-end">
+        <div class="">
+          <span class="text-4xl block text-right pr-7 md:w-28 md:h-28 w-24 h-24 rounded-full border-cprimary border-4 text-cprimary font-extrabold num_encima">3</span>
+          <h2 class="text-black md:text-2xl lg:text-4xl text-2xl font-extrabold md:text-left text-center ml-8 mt-4 md:ml-6 lg:ml-0"><span class="text-cprimary font-bold">REALIZA</span> TU PAGO</h2>
+          <p class="text-dark md:text-left text-left ml-8 md:ml-6 lg:ml-0">Elige tu método de pago.</p>
+         </div>
+      </div>
+      
+
+       <div class="  justify-center md:my-14 my-2 mt-0 lg:px-4 md:px-0 px-0 pt-10 md:pt-0">
+
+        <div class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-0 md:mt-0 mt-0 p-6 md:py-10 md:px-0  md:pb-0  pb-10">
+          
+          <div class="border border-cprimary text-center h-28 content-center">
+            <div class="container_input item"> <input type="radio" name="pago" onclick="itemsSweep(this);" /> <span class="checkmark"></span> </div>
+            <img src="../src/assets/images/rentcarIconPago1.png" alt="Tarjeta" class="w-20 text-center mx-auto">
+          </div>
+          
+          <div class="border border-cprimary text-center h-28 content-center">
+            <div class="container_input item"> <input type="radio" name="pago" onclick="itemsSweep(this);" /> <span class="checkmark"></span> </div>
+            <img src="../src/assets/images/rentcarIconPago2.png" alt="Tarjeta" class="w-32 text-center mx-auto">
+          </div>
+
+          <div class="border border-cprimary text-center h-28 content-center">
+            <div class="container_input item"> <input type="radio" name="pago" onclick="itemsSweep(this);" /> <span class="checkmark"></span> </div>
+            <img src="../src/assets/images/rentcarIconPago3.png" alt="Tarjeta" class="w-32 text-center mx-auto">
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-0 md:mt-0 mt-0 py-6 md:py-10 md:px-10  pb-10">
+          <div>
+            <input type="text" placeholder="Número de tarjeta" class="rounded border border-csecondary p-3 my-1 w-full"/>
+          </div>
+
+          <div>
+            <input type="text" placeholder="Nombre del titular" class="rounded border border-csecondary p-3 my-1 w-full"/>
+          </div>
+        
+          <div>
+            <div class="grid md:grid-cols-2 grid-cols-2 md:gap-6 gap-0 md:mt-0 mt-0">
+              <div>
+                <select class="rounded border border-csecondary p-3 my-1 w-full">
+                      <option value="00">Fecha de expiración</option>
+                      <option value="01">January</option>
+                      <option value="02">February </option>
+                      <option value="03">March</option>
+                      <option value="04">April</option>
+                      <option value="05">May</option>
+                      <option value="06">June</option>
+                      <option value="07">July</option>
+                      <option value="08">August</option>
+                      <option value="09">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                      <option value="12">December</option>
+                </select>
+              </div>
+
+              <div>
+                <select class="rounded border border-csecondary p-3 my-1 w-full">
+                  <option value="24"> 2024</option>
+                  <option value="25"> 2025</option>
+                  <option value="26"> 2026</option>
+                  <option value="27"> 2027</option>
+                  <option value="28"> 2028</option>
+                  <option value="29"> 2029</option>
+                  <option value="30"> 2030</option>
+                </select>
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div>
+            <input type="number" placeholder="Código de seguridad (3 dígitos)" class="rounded border border-csecondary p-3 my-1 w-full"/>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-1 grid-cols-1 md:gap-8 gap-0 md:mt-0 mt-0 p-6 md:p-10  pb-10">
+          <button type="button" class="btn_primary mx-auto block my-1 w-3/5">PAGAR</button>
+             <button type="button" class="btn_third mx-auto block my-1 w-3/5">CANCELAR Y REGRESAR</button>
+        </div>
+
+      </div>
+  
+    </main>
+
+    <!-- FOOTER-->
+    <footer class="md:px-12 py-20 px-4">
+
+      <div class="text-center">
+        <img src="../src/assets/images/rentcarlogofooter.png" alt="Logo" class="mx-auto text-center md:w-2/12 w-6/12"/>
+      </div>
+
+      <div class="grid md:grid-cols-4 grid-cols-1 md:gap-8 gap-2 md:mt-14 mt-0 lg:px-24 md:px-0 px-8 pt-10 md:pt-0 pb-4 md:pb-0">
+        <div class="text-center">
+
+          <!-- REDES SOCIALES -->
+          <div class="grid md:grid-cols-3 grid-cols-3 md:gap-4 gap-2 md:mt-14 mt-0  px-8 text-center">
+            <div>
+              <a href="#" class="text-center">
+                <img src="../src/assets/images/rentcarSVGWhatsapp.svg" alt="Icon whatsapp" class="lg:w-8 md:w-12 w-6 lg:p-2 md:p-0 lg:border md:border-0 lg:border-white lg:rounded hover:border-cprimary mx-auto">
+              </a>
+            </div>
+
+            <div>
+              <a href="" class="text-center">
+                <img src="../src/assets/images/rentcarIconFacebook.svg" alt="Icon Facebook" class="lg:w-8 lg:h-8 md:w-5 md:h-5 w-6 h-6 lg:p-2 md:p-0 lg:border md:border-0 lg:border-white lg:rounded hover:border-cprimary mx-auto">
+              </a>
+            </div>
+
+            <div>
+              <a href="" class="text-center">
+                <img src="../src/assets/images/rentcarIconLinkedin.svg" alt="Icon Linkedin" class="lg:w-8 md:w-12 lg:p-2 w-6 md:p-0 lg:border md:border-0 lg:border-white lg:rounded hover:border-cprimary mx-auto">
+              </a>
+            </div>
+          </div>
+         
+          
+        </div>
+
+        <!-- MENU 1 -->
+        <div class="py-4 md:py-0 hidden md:block">
+          <p class="text-white font-bold">MENÚ</p>
+          <ul>
+            <li><a href="" class="text-white text-sm font-normal">Cotizar Ahora</a></li>
+            <li><a href="" class="text-white text-sm font-normal">Ver autos disponibles</a></li>
+            <li><a href="" class="text-white text-sm font-normal">¿Cómo funciona?</a></li>
+            <li><a href="" class="text-white text-sm font-normal">Beneficios</a></li>
+            <li><a href="" class="text-white text-sm font-normal">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- MENU 2-->
+        <div class="hidden md:block">
+          <p class="text-white font-bold">OPCIONES</p>
+          <ul>
+            <li><a href="" class="text-white text-sm font-normal">Pasos para rentar</a></li>
+            <li><a href="" class="text-white text-sm font-normal">Requisitos</a></li>
+            <li><a href="" class="text-white text-sm font-normal">Sobre nosotros</a></li>
+            <li><a href="" class="text-white text-sm font-normal">Contáctanos</a></li>
+            <li><a href="" class="text-white text-sm font-normal">Inicio</a></li>
+          </ul>
+        </div>
+
+        <!-- INFO CONTACTO -->
+        <div class="py-2 md:py-0 text-center md:text-left mt-4 md-mt-0">
+          <p class="text-white font-bold">CONTACTO</p>
+          <ul>
+            <li class="text-white text-sm font-normal">Insurgentes Sur 1550</li>
+            <li class="text-white text-sm font-normal">CP. 06732</li>
+            <li class="text-white text-sm font-normal">México, CDMX</li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 grid-cols-1 md:gap-8 gap-2 md:mt-14 mt-0 md:px-24 px-8 border-t border-slate-200 md:pt-8 pt-4">
+        <div>
+          <a class="text-white text-xs md:text-left text-center pt-6 md:pt-0 block">Términos y Condiciones generales</a>
+        </div>
+
+        <div>
+          <p class="text-white text-xs md:text-right text-center py-2 md:py-0">Copyright Derechos Reservados 2024</p>
+        </div>
+      </div>
+
+    </footer>
+    
+
+      <!-- JS -->
+      <script src="jquery.min.js"></script>
+
+      <!-- MENU -->
+      <script>
+        // Grab HTML Elements
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+      
+        // Add Event Listeners
+        btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        });
+      </script>
+
+      <!-- MENU CEL SE QUEDE EN TOP -->
+      <script>
+        const fixedElement = document.querySelector('.fixed-element');
+
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 5) { 
+            fixedElement.classList.add('fixed');
+          } else {
+            fixedElement.classList.remove('fixed');
+          }
+        });
+      </script>
+
+      <!-- BTN MOSTRAR MÁS INFO -->
+      <script>
+        $(".icon_mas").click(function() {
+             //Ponemos la clase aside in
+             $(".extra").toggleClass("hidden");
+             $(".icon_mas_img").toggleClass("abajo");
+         });
+      
+      </script>
+
+      <!-- ACTIVOS CHECKS -->
+       <!-- Marcar como activo -->
+    <script>
+      function itemsSweep(elem) {
+          var radios = document.getElementsByName(elem.name);
+          for (var i = 0; i < radios.length; i++) {
+              if (radios[i].checked == true) {
+                  radios[i].parentNode.parentNode.classList.add("is-activated");
+              } else {
+                  radios[i].parentNode.parentNode.classList.remove("is-activated");
+              }
+          }
+      }
+
+      function itemsToggle(elem) {
+          elem.parentNode.parentNode.classList.toggle('is-activated');
+      }
+
+      function funcItemsSweepM(elem) {
+          var radios = document.getElementsByName(elem.firstChild.firstChild.name);
+          for (var i = 0; i < radios.length; i++) {
+              if (radios[i].checked == true) {
+                  radios[i].parentNode.parentNode.classList.add("is-activated");
+              } else {
+                  radios[i].parentNode.parentNode.classList.remove("is-activated");
+              }
+          }
+      }
+  </script>
+
+    </body>
+</html>
